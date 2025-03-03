@@ -46,6 +46,36 @@ The `build_and_test.sh` run the both the build and test(for all packages and tes
 . build_and_test.sh
 ```
 
-If you want to execute build and test separately
+If you want to execute build and test separately, please follow:
+Build:
+
+```
+source /opt/ros/humble/setup.bash
+unset GTK_PATH
+colcon build
+```
+
+and source the setup.bash file:
+
+```
+source install/setup.bash
+```
+
+Test:
+
+Run the test for C++ version sine_wave_cpp:
+```
+colcon test --packages-select sine_wave_cpp
+```
+Run the test for Python version sine_wave_python:
+```
+colcon test --packages-select sine_wave_py
+```
+
+To see the test result, run:
+```
+colcon test-result --verbose
+```
+
 
 
