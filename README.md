@@ -40,6 +40,7 @@ git clone https://github.com/herrouou/task_ws.git
 cd task_ws
 ```
 
+**Build and Test**
 The `build_and_test.sh` run the both the build and test(for all packages and test files):
 
 ```
@@ -47,7 +48,7 @@ The `build_and_test.sh` run the both the build and test(for all packages and tes
 ```
 
 If you want to execute build and test separately, please follow:
-Build:
+**Build**:
 
 ```
 source /opt/ros/humble/setup.bash
@@ -61,7 +62,7 @@ and source the setup.bash file:
 source install/setup.bash
 ```
 
-Test:
+**Test**:
 
 Run the test for C++ version sine_wave_cpp:
 ```
