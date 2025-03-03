@@ -23,7 +23,13 @@ sudo apt-get install ros-humble-cv-bridge
 sudo apt-get install python3-colcon-common-extensions
 ```
 
-Some code formatting and linting tools:
+Or to simplify it you can run the install shell:
+
+```
+. install.sh
+```
+
+Some code formatting and linting tools if it need:
 
 ```
 sudo apt-get install clang-format
