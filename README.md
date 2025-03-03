@@ -101,7 +101,9 @@ The logic and the structure of both C++ and Python versions are similar:
 
 5. We use the PlotJuggler to visualize the sine wave and use CV windows to visualize the origin image and gray scaled image.
 
-### C++ package(C++ Version)
+### 1. Launch the Publisher and Receiver
+
+**using C++ package(C++ Version)**
 
 The package name is sine_wave_cpp, and run the launch file:
 
@@ -109,7 +111,7 @@ The package name is sine_wave_cpp, and run the launch file:
 ros2 launch sine_wave_cpp sine_wave_cpp.launch.py
 ```
 
-### Python Version(Python Version)
+**using Python Version(Python Version)**
 
 The package name is sine_wave_py, and run the launch file:
 
@@ -117,10 +119,21 @@ The package name is sine_wave_py, and run the launch file:
 ros2 launch sine_wave_py sine_wave_py.launch.py
 ```
 
-### Visualize sine wave and dynamically tune the parameters
+### 2. Visualize sine wave and dynamically tune the parameters
 
-To tune the parameters, for example change the amplitude
+To tune the parameters, for example change the amplitude(default value is 1.0), open another terminal and run:
 
-### Call the service and visualize images
+```
+ros2 param set /sine_wave_publisher amplitude 5.0
+```
 
+And you can see the amplitude changing in PlotJuggler.
 
+### 3. Call the service and visualize images
+
+A image is saved in `src/sine_wave_cpp/pics`. To call the service, open another terminal and run:
+
+```
+ros2 service call /convert_image sine_wave_cpp/srv/ConvertImage "{file_path: 'src/sine_wave_cpp/pics/image.png'}" > /dev/null 2>&1
+```
+To quit the visualization-window, please tap 'Enter' or other keys on the window
