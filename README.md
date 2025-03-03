@@ -1,11 +1,13 @@
 # Task_Ziou
 
-This is a workspace of the task done by Ziou. It contains a ROS2 Humble workspace which has 2 packages.
+This is a workspace of the task done by Ziou. It contains a ROS2 workspace which has 2 packages.
 
 
-# Files
+## Prerequisites
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+### Ubuntu and ROS
+
+Ubuntu 64-bit 22.04. [ROS Humble](https://docs.ros.org/en/humble/Installation.html).
 
 ## Create files and folders
 
