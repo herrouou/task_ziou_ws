@@ -23,7 +23,7 @@ sudo apt-get install ros-humble-cv-bridge
 sudo apt-get install python3-colcon-common-extensions
 ```
 
-For the code formatting and linting, if you need:
+Some code formatting and linting tools:
 
 ```
 sudo apt-get install clang-format
@@ -31,20 +31,6 @@ sudo apt-get install python3-autopep8
 sudo apt-get install python3-ament-pycodestyle
 ```
 
-RUN apt-get update && apt-get install -y \
-    libcanberra-gtk-module \
-    libcanberra-gtk3-module \
-    python3-autopep8 \
-    python3-ament-pycodestyle \
-    clang-format \
-    ros-humble-plotjuggler-ros \
-    ros-humble-generate-parameter-library \
-    ros-humble-ament-clang-format \
-    ros-humble-cv-bridge \
-    python3-colcon-common-extensions \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
-```
 
 The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
 
