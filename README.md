@@ -136,4 +136,35 @@ A image is saved in `src/sine_wave_cpp/pics`. To call the service, open another 
 ```
 ros2 service call /convert_image sine_wave_cpp/srv/ConvertImage "{file_path: 'src/sine_wave_cpp/pics/image.png'}" > /dev/null 2>&1
 ```
-To quit the visualization-window, please tap 'Enter' or other keys on the window
+
+If the visualization is failed, please run:
+
+```
+unset GTK_PATH
+```
+
+and re-launch the programm
+
+To quit the visualization-window, please tap 'Enter' or other keys.
+
+## Dockerfile
+
+The repository provides a docker file to run on different machines. 
+
+Create necessary Docker image sine_wave_task:
+
+```
+docker build --network=host -t sine_wave_task .
+```
+
+Please run: 
+
+```
+docker run --rm -it \
+-e DISPLAY=$DISPLAY \
+-v /tmp/.X11-unix:/tmp/.X11-unix \
+sine_wave_task /bin/bash
+```
+
+Then follow the steps introduced before to run the file
+
