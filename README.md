@@ -9,7 +9,7 @@ This is a workspace of the task done by Ziou. It contains a ROS2 workspace which
 
 Ubuntu 64-bit 22.04. [ROS Humble](https://docs.ros.org/en/humble/Installation.html).
 
-## 1.2 Extra packages
+### 1.2 Extra packages
 
 These are the extra packages to run the program:
 
