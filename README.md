@@ -40,7 +40,7 @@ git clone https://github.com/herrouou/task_ws.git
 cd task_ws
 ```
 
-The **build_and_test.sh"" run the both the build and test(for all packages and test files):
+The 'build_and_test.sh' run the both the build and test(for all packages and test files):
 
 ```
 . build_and_test.sh
